@@ -1,5 +1,7 @@
 # Turtlebot Random walker with obstacle avoidance
 
+![GitHub Logo](/results/turtlebot_random_walker.gif)
+
 The Turtlebot moves forward until an obstacle is detected in its vicinity. When the obstacle is detected, the robot rotates until it finds a free path and once found, it moves forward again.
 
 ## Prerequisites
