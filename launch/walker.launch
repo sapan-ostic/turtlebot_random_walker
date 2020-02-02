@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+ 	<arg name = "runRosbag" default= "false" />
+
+<!--     <env name="ROSCONSOLE_CONFIG_FILE" value="$(find turtlebot_random_walker)/config/logger_level.conf" /> -->
+    
+    <include file="$(find turtlebot_random_walker)/launch/turtlebot_world.launch"></include>
+    
+    <node pkg="turtlebot_random_walker" name="walker" type="walker" output="screen" />
+<!--     <node pkg="rosbag" name="record" type="record" args="-a -x /camera/(.*) -O $(find turtlebot_random_walker)/results/walker.bag"
+        if="$(arg runRosbag)" /> -->
+
+ 
+
+</launch>
+
+
