@@ -45,7 +45,7 @@ void MoveRobot::move(){
 	
 	} else {
 		vel.angular.z = 0.0;
-		vel.linear.x = 1.0;	
+		vel.linear.x = 0.5;	
 	}
 
 	pub.publish(vel);
