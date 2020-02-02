@@ -1,4 +1,4 @@
-# Turtlebot Walker - Random walk and obstacle avoidance implementation
+# Turtlebot Random walker with obstacle avoidance
 
 The Turtlebot moves forward until an obstacle is detected in its vicinity. When the obstacle is detected, the robot rotates until it finds a free path and once found, it moves forward again.
 
@@ -16,16 +16,16 @@ sudo apt-get install ros-kinetic-turtlebot-gazebo ros-kinetic-turtlebot-apps ros
 ```
 sudo apt-get install ros-kinetic-urg-node
 ```
+6. Follow the ROS tutorials if you are new to ROS: http://wiki.ros.org/ROS/Tutorials
 
-The following assumed you have a working ROS workspace.
-## Download demo
-
+## Running the code
+Download the repository and build it.
 '''
 cd ~/catkin_ws
 catkin_make
 source devel/setup.bash
 cd src/
-git clone --recursive https://github.com/AdarshJS/Turtlebot-Walker.git
+git clone 
 cd ..
 catkin_make
 '''
@@ -33,17 +33,15 @@ catkin_make
 Tip: Include source ~/catkin_ws/devel/setup.bash in the ~/.bashrc file to run it everytime a new terminal is created.
 
 ## Running the simulation
-To simulate the turtlebot in Gazebo and view its walker behavior, follow:
+To simulate the turtlebot in Gazebo:
 
 ```
 cd ~/catkin_ws
-source devel/setup.bash
-roslaunch turtlebot_walker walker.launch
+roslaunch turtlebot_random_walker walker.launch
 ```
 Press ctrl+c to quit the simulation.
 
 ## Observing topics in the ROSbag
-
 Please check the results folder for a ROSbag file called walker.bag. This file has a record of all topics except the camera topics for 30 seconds from the simulated turtlebot. To run this rosbag file:
 
 ```
