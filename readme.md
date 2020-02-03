@@ -53,7 +53,7 @@ Check the `bags` folder for a ROSbag file called walker.bag. This file has a rec
 ## Observing topics in the ROS bag
 To run the rosbag file:
 ```
-cd ~/catkin_ws/src/turtlebot_walker/bags
+cd ~/catkin_ws/src/turtlebot_random_walker/bags
 rosbag play walker.bag
 ```
 
