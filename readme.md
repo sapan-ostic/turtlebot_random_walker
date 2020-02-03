@@ -48,7 +48,7 @@ To log data on topics, launch the code with `runRosbag:=true`
 ```
 roslaunch turtlebot_random_walker walkler.launch runRosbag:=true
 ```
-Check the `bags` folder for a ROSbag file called walker.bag. This file has a record of all topics except the camera topics from the simulated turtlebot.
+Check the `bags` folder for a ROSbag file called walker.bag. This file has a record of all topics from the simulated turtlebot.
 
 ## Observing topics in the ROS bag
 To run the rosbag file:
