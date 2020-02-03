@@ -15,8 +15,14 @@ sudo apt-get install ros-kinetic-turtlebot-gazebo ros-kinetic-turtlebot-apps ros
 3. Gazebo: http://gazebosim.org/tutorials?tut=install_ubuntu
 4. Catkin: http://wiki.ros.org/catkin
 5. Hokuyu Lidar Sensor: http://wiki.ros.org/turtlebot/Tutorials/indigo/Adding%20a%20lidar%20to%20the%20turtlebot%20using%20hector_models%20%28Hokuyo%20UTM-30LX%29
+To ease the efforts, copy the `turtlebot_description` from the zip file in the repository to the folder `/opt/ros/kinetic/share/`
 ```
-sudo apt-get install ros-kinetic-urg-node
+cd /opt/ros/kinetic/share/
+sudo rm -r turtlebot_description
+```
+Navigate to the Folder containing unzipped file and use following command:
+```
+sudo mv turtlebot_description /opt/ros/kinetic/share/
 ```
 6. Follow the ROS tutorials if you are new to ROS: http://wiki.ros.org/ROS/Tutorials
 
