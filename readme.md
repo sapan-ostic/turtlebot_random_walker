@@ -22,7 +22,7 @@ sudo apt-get install ros-kinetic-urg-node
 
 ## Running the code
 Download the repository and build it.
-'''
+```
 cd ~/catkin_ws
 catkin_make
 source devel/setup.bash
@@ -30,7 +30,7 @@ cd src/
 git clone 
 cd ..
 catkin_make
-'''
+```
 
 Tip: Include source ~/catkin_ws/devel/setup.bash in the ~/.bashrc file to run it everytime a new terminal is created.
 
