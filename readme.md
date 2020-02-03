@@ -64,6 +64,6 @@ rostopic list
 
 or
 ```
-cd ~/catkin_ws/src/turtlebot_walker/results
+cd ~/catkin_ws/src/turtlebot_random_walker/results
 rosbag info walker.bag
 ```
